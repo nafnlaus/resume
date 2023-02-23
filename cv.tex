@@ -9,7 +9,7 @@
 %	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 %	copies of the Software, and to permit persons to whom the Software is
 %	furnished to do so, subject to the following conditions:
-%	
+%
 %	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 %	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 %	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -17,7 +17,7 @@
 %	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 %	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 %	THE SOFTWARE.
-%	
+%
 %
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
 
@@ -48,7 +48,7 @@
 %	PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
-\usepackage{parskip} 	
+\usepackage{parskip}
 
 %other packages for formatting
 \RequirePackage{color}
@@ -63,7 +63,7 @@
 \usepackage{enumitem}
 
 % centered version of 'X' col. type
-\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\newcolumntype{C}{>{\centering\arraybackslash}X}
 
 %to prevent spillover of tabular into next pages
 \usepackage{supertabular}
@@ -72,11 +72,11 @@
 \setlength{\fullcollw}{0.47\textwidth}
 
 %custom \section
-\usepackage{titlesec}				
+\usepackage{titlesec}
 \usepackage{multicol}
 \usepackage{multirow}
 
-%CV Sections inspired by: 
+%CV Sections inspired by:
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{10pt}{10pt}
@@ -103,7 +103,7 @@
 \begin{document}
 
 % non-numbered pages
-\pagestyle{empty} 
+\pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
 %	TITLE
@@ -116,13 +116,22 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\Huge{Alex de Wit} \\[7.5pt]
+\href{https://github.com/nafnlaus}{\raisebox{-0.05\height}\faGithub\ nafnlaus} \ $|$ \
+\href{https://linkedin.com/in/alex-de-wit}{\raisebox{-0.05\height}\faLinkedin\ alex-de-wit} \ $|$ \
+\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \
+\href{mailto:alex@nafnalus.ca}{\raisebox{-0.05\height}\faEnvelope \ alex@nafnalus.ca} \ $|$ \
+\href{tel:+16139145304}{\raisebox{-0.05\height}\faMobile \ (613) 914-5304} \\
 \end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\textbf{University of Waterloo}  \hfill \textbf{CGPA 90\%} \\
+BCS (Computer Science) \hfill 2018 - 2023 \\
+Coursework: Real-time programming, Distributed systems, Programming for performance, Programming languages, Operating Systems, Databases, Algorithms \& Data Structures, Concurrency
+
 
 %----------------------------------------------------------------------------------------
 % EXPERIENCE SECTIONS
@@ -135,18 +144,52 @@ This CV is automatically generated and deployed using the \href{https://github.c
 %Experience
 \section{Work Experience}
 
+\textbf{Software Developer} @ Steel Toad \hfill May 2022 - present \\[3.75pt]
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Designation} & \hfill Jan 2021 - present \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+  \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+    \item[--] Took primary responsibility in development and launch of mobile app completing 400 inspections daily.
+    \item[--] Designed and implemented a reporting database and update service syncing with back-end systems.
+    \item[--] Maintained and improved existing production backend, frontend, and infrastructure systems.
+  \end{itemize}
+  \end{minipage}
+}
 \end{tabularx}
 
+\textbf{Data Analyst} @ ISED, Government of Canada \hfill May 2020 - Dec 2020 \\[3.75pt]
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Designation} & \hfill Mar 2019 - Jan 2021 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+  \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+    \item[--] Implemented screening criteria for anomalous filing trends related to COVID relief fraud.
+    \item[--] Designed and implemented a workflow expanding internal databases to include corporate financial data.
+    \item[--] Added capacity for real-world corporate ownership linkages to be reflected in internal databases.
+  \end{itemize}
+  \end{minipage}
+}
+\end{tabularx}
+
+\textbf{Research Assistant} @ University of Waterloo \hfill Feb 2019 - Jun 2020 \\[3.75pt]
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] long long line of blah blah that will wrap when the table fills the column width
-        \item[--] again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
+      \item[--] Collaborated on social network analysis and natural language processing library.
+      \item[--] Worked extensively with standard python data manipulation, visualization, and analysis tools.
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+\textbf{Data Analyst} @ ISED, Government of Canada \hfill May 2019 - Aug 2019 \\[3.75pt]
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+      \item[--] Consolidated historical volume database and automated monthly update procedure.
+      \item[--] Profiled the lagging 20,000 customers preventing fully online service delivery using data-driven approach.
+      \item[--] Designed identification methodology for customer bases representing 160,000 federal corporations.
     \end{itemize}
     \end{minipage}
 }
@@ -156,40 +199,8 @@ This CV is automatically generated and deployed using the \href{https://github.c
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-\section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
-
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
-
-2022 & Class 12th Some Board \hfill  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
-
-%----------------------------------------------------------------------------------------
-%	SKILLS
-%----------------------------------------------------------------------------------------
-\section{Skills}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+\textbf{TrainOS} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Real-time operating system for model trains.}
 \end{tabularx}
 
 \vfill
