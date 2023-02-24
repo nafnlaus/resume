@@ -117,21 +117,12 @@
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \Huge{Alex de Wit} \\[7.5pt]
-\href{https://github.com/nafnlaus}{\raisebox{-0.05\height}\faGithub\ nafnlaus} \ $|$ \
+% \href{https://github.com/nafnlaus}{\raisebox{-0.05\height}\faGithub\ nafnlaus} \ $|$ \
 \href{https://linkedin.com/in/alex-de-wit}{\raisebox{-0.05\height}\faLinkedin\ alex-de-wit} \ $|$ \
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \
-\href{mailto:alex@nafnalus.ca}{\raisebox{-0.05\height}\faEnvelope \ alex@nafnalus.ca} \ $|$ \
+% \href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \
+\href{mailto:alex@nafnlaus.ca}{\raisebox{-0.05\height}\faEnvelope \ alex@nafnlaus.ca} \ $|$ \
 \href{tel:+16139145304}{\raisebox{-0.05\height}\faMobile \ (613) 914-5304} \\
 \end{tabularx}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-\section{Education}
-\textbf{University of Waterloo}  \hfill \textbf{CGPA 90\%} \\
-BCS (Computer Science) \hfill 2018 - 2023 \\
-Coursework: Real-time programming, Distributed systems, Programming for performance, Programming languages, Operating Systems, Databases, Algorithms \& Data Structures, Concurrency
-
 
 %----------------------------------------------------------------------------------------
 % EXPERIENCE SECTIONS
@@ -139,7 +130,7 @@ Coursework: Real-time programming, Distributed systems, Programming for performa
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-This CV is automatically generated and deployed using the \href{https://github.com/jitinnair1/autoCV}{autoCV} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
+I am a Computer Science student graduating in May 2023. I am looking for full-time employment beginning shortly after that time. I have significant academic and practical experience in systems-level programming, especially in C, and one year of experience developing and maintaining production systems. Outside of work, I have a passion for sustainable and regenerative agriculture, and I play piano, bassoon, and volleyball, though not at the same time.
 
 %Experience
 \section{Work Experience}
@@ -199,11 +190,26 @@ This CV is automatically generated and deployed using the \href{https://github.c
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{TrainOS} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{Real-time operating system for model trains.}
+\textbf{Real-time train control system} & \hfill \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+For CS452 (Trains) at uWaterloo, I, with a partner, wrote a real-time microkernel for the Raspberry Pi 4, and a multitasking train control program on top of it. We used SPI through the Pi's programmable GPIO pins to communicate with a serial hat, and UART from there to the terminal and train controller. We wrote our own logging library for debugging, since no GDB stub was available for the platform. Our project is written entirely in C, except the context switch, which is in ARMv8 assembly.
+}
 \end{tabularx}
 
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+Software: (\textit{proficient}) C, C++, Rust, Kotlin, Dart, Java, Python, Git (\textit{familiar}) SQL, Assembly
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\textbf{University of Waterloo}  \hfill Sept 2018 - present \\
+BCS (Computer Science) \hfill (CGPA 90\%) \\
+Coursework: Real-time OS, Distributed systems, Programming for performance, Programming languages, Algorithms \& data structures, Databases, Concurrency
+
 \vfill
-\center{\footnotesize Last updated: \today}
 
 \end{document}
